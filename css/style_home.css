@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+body {
+	font-family: "Lato", sans-serif;
+	background-color: #e6e6e6;
+	width: 98%;
+	margin: 0;
+  }
+  .header {
+	  
+	font-family: "Lato", sans-serif;
+	border-radius: 25px;
+	background-color: #ff2e2e;
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	padding: 0.5rem 1rem; }
+
+.header img{
+	max-width: 250px;
+	max-height: 100px;
+}
+.header h1{
+	color: #f1f1f1;
+	align-self: center;
+	margin-right: 200px;
+}
+
+  
+  .sidebar {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background: linear-gradient(180deg, rgba(255,30,30,1) 2%, rgb(255, 57, 57) 100%);
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+  }
+  
+  .sidebar a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 20px;
+	color: #ffffff;
+	display: block;
+	transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+	color: #f1f1f1;
+	background: gray;
+  }
+  
+  .sidebar .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+  }
+  
+  .openbtn {
+	font-size: 20px;
+	cursor: pointer;
+	background-color: rgb(245, 16, 16);
+	color: white;
+	padding: 10px 15px;
+	border: none;
+  }
+  
+  .openbtn:hover {
+	background-color: #444;
+  }
+  
+  #main {
+	transition: margin-left .5s;
+	padding: 16px;
+	width: 100%;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 800px) {
+	.sidebar {padding-top: 15px;}
+	.sidebar a {font-size: 18px;}
+  }
+
+
+  /*seccion para contenido de home*----------------------------------------------------------------*/
+.container-content{
+
+}
+ .itemcontent{
+	 background-color: #e6e6e6;
+	 
+ }
+ .itemcontent img{
+	 float: left;
+ }
+ .itemcenter{
+	margin-top: 20px;
+	border-radius: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #ffb5b5;
+ }
+ .itemcenter-nobgcolor{
+	margin-top: 20px;
+	border-radius: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+ }
+
+.itemcenter-nobgcolor-twoimage{
+   margin-top: 20px;
+   border-radius: 12px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+}
+.itemcenter-nobgcolor-twoimage img{
+	width: 250px;
+	height: 250px;
+}
+ .itemcenter img{
+	 max-height: 400px;
+	 max-width: 400px;
+ }
+ .itemcenter-nobgcolor img{
+	max-height: 30%;
+	max-width: 50%;
+	min-height: 30%;
+	min-width: 50%;
+}
+
+
+ .row {
+	display: flex;
+  }
+  
+  /* Create two equal columns that sits next to each other */
+  .column {
+	  border-radius: 12px;
+	background-color: #ff2e2e;
+	flex: 50%;
+	padding: 10px;
+	text-align: center;
+	 /* Should be removed. Only for demonstration */
+  }
+  .column-centertext {
+	border-radius: 12px;
+  background-color: #ff2e2e;
+  padding: 10px;
+  text-align: center;
+   /* Should be removed. Only for demonstration */
+}
+  .column img{
+	  float: left;
+	  max-width: 70%;
+	  min-width: 70%;
+	  max-height: 250px;
+	  min-height: 250px;
+	  
+  }
+  .column h2{
+	  margin-top: 15%;
+	  color: #f1f1f1;
+	  margin-left: 60%;
+	  font-size: 30px;
+	  
+  }
+  .column-centertext h2{
+	color: #f1f1f1;
+	font-size: 30px;
+}
+.column-centertext p{
+	color: #f1f1f1;
+	font-size: 18px;
+	text-align: justify;
+}
+  .column:hover{
+	  background-color: #ff8484;
+  }
+
+  @media screen and (max-width: 800px) {
+	.column {
+		border-radius: 12px;
+	  
+
+
+	   /* Should be removed. Only for demonstration */
+	}
+	.column h2{
+		margin-top: 35%;
+		margin-right: 120px;
+		font-size: 15px;
+	}
+	.column img{
+		max-width: 70%;
+		min-width: 70%;
+		max-height: 250px;
+		min-height: 250px;
+		
+	}
+  }
+  .mainitem{
+	font-family: 'Montserrat', sans-serif;
+	  width: 100%;
+	  min-height: 200px;
+	  background-color: rgb(214, 214, 214);
+	margin-top: 12px;  
+	border-top: 2px solid gray;
+	border-bottom: 2px solid gray;
+	transition: background-color 1.5s, color 1.5s;
+
+  }
+  .mainitem img{
+	  float: left;
+	max-width: 30%;
+	min-width: 30%;
+	max-height: 200px;
+	min-height: 200px;
+  }
+  .mainitem h1{
+	  margin-left: 60%;
+	  margin-top: 5.5%
+  }
+  .mainitem:hover{
+	  background-color: #ff2e2e;
+	  color: #f1f1f1;
+  }
+  footer {
+	  margin-top: 15px;
+	  
+	text-align: center;
+	padding: 3px;
+	border-top: 2px solid red;
+	color: rgb(63, 60, 60);
+  }

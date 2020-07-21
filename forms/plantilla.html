@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/styleform.css">
+  <title>Document</title>
+</head>
+<body>
+<form class="form" action="./" method="POST">
+
+  <!--Titulo princiapl-->
+<div class="form__title">TITULO PRINCIPAL</div>
+<hr>
+
+  <!--label&textarea-->
+<div class="form__item">
+  <label for="givennames" class="form__label">title</label>
+  <input type="text" class="form__input" name="" id="" placeholder="Tu respuesta" autocomplete="off">
+  <span class="form__error">A sample error message</span>
+  <br>
+</div>
+<hr>
+
+<!--label&input-date-->
+<div class="form__item">
+  <label for="" class="form__label">title</label>
+  <input type="date" class="form__input form__input--small" name="" id="" placeholder="Tu respuesta" autocomplete="off">
+  <span class="form__error">A sample error message</span>
+  <br>
+</div>
+<hr>
+
+  <!--label&radio-->
+<div>
+    <label for="givennames" class="form__label">title</label>
+    <hr style="height:0px; visibility:hidden;"/>
+    <input type="radio" autocomplete="off" 
+    name="-----" value="">option
+    <hr style="height:0px; visibility:hidden;"/>
+    <input type="radio" autocomplete="off"
+    name="-----" value="">option
+    <hr style="height:0px; visibility:hidden;"/>
+    <input type="radio" autocomplete="off"
+    name="-----" value="">option
+    <hr style="height:0px; visibility:hidden;"/>
+    <input type="radio" autocomplete="off"
+    name="-----" value="">option
+    <hr style="height:0px; visibility:hidden;"/>
+    <input type="radio" autocomplete="off"
+    name="-----" value="">option
+    <span class="form__error">A sample error message</span>
+    <br><br>
+  </div>
+<hr>
+
+  <!--label&select-->
+  <div class="form__item">
+    <label for="" class="form__label">title</label>
+    <select name="select" id="" class="form__label" autocomplete="off">
+      <option value="value1" selected>Elige</option>
+      <option value="value2">option</option>
+      <option value="value3">option</option>
+      <option value="value4">option</option>
+      <option value="value4">option</option>
+      <option value="value6">option</option>
+      <option value="value7">option</option>
+    </select>
+    <span class="form__error">A sample error message</span>
+    <br><br>
+  </div>
+<hr>
+
+<!--label&alert-->
+  <div class="form__item">
+    <label for="" class="form__label">title</label>
+    <input type="button" class="form__btn__red" name="" onclick='alert("")' value="Condiciones y parámetros">
+    <br><br>
+  </div>
+  <hr>
+
+  <!--botón enviar-->
+  <div class="form__item">
+    <button class="form__btn__green" type="submit">Enviar</button>
+  </div>
+</form>
+</body>
+</html>
