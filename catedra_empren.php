@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="css/style_home.css">
 </head>
 <body>
-<!--hola bb 23456-->
+<!--hola bb 234567-->
 <div id="mySidebar" class="sidebar">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
   <a href="#">Cátedra de emprendimiento</a>
