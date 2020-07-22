@@ -14,6 +14,7 @@
 <br><br><br>
 	<div class="container">
 		<div class="row">
+		<!--HOLA -->
 			<div class="col-sm-12">
 				<div class="jumbotron">
 				<a href="php/salir.php" class="btn btn-info">Salir del sistema</a>
