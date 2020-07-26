@@ -21,8 +21,8 @@ function openNav() {
   }
 
   function openFormularios(){
-    console.log("f");
-  }
+  console.log("f");
+}
   function onOpenAbout(){
     window.location.href="quienes_somos.php"
   }
