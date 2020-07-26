@@ -23,6 +23,13 @@
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="js/crbnMenu.js"></script>
     <script src="js/home.js"></script>
+    <?php
+ session_start();
+ if(!isset($_SESSION['user'])){
+	 header("Location:f.php");
+	 exit(); 
+ }
+?>
     <script>
         if ($(window)) {
             $(function () {

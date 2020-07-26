@@ -4,6 +4,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/style_home.css">
 </head>
+<?php
+ session_start();
+ if(!isset($_SESSION['user'])){
+	 header("Location:index.php");
+	 exit(); 
+ }
+?>
 <body>
 
 <div id="mySidebar" class="sidebar">
@@ -18,7 +25,7 @@
   <a href="#">Extensión</a>
   <a href="#">Clúster Fami-pyme</a>
   <a href="#">Innovación</a>
-  <a href="formularios.php">registro de formularios</a>
+  <a onclick="openFormularios()">registro de formularios</a>
 </div>
 
 <div id="main">
@@ -68,10 +75,13 @@
 	<p>Centro de Emprendimiento, Innovación y Desarrollo Empresarial de la Universidad Libre(CEIDEUL)</p>
 	<p>E-mail:ceideul@unilibre.edu.co</p>
 	<p>TEL:4232700 ext. 1812</p>
+	<p id="phplabel">awdqwdqwsd</p>
 	
   </footer>
 
-
+<?php
+printf("<p id = 'phplabel'>%s</p>", $_SESSION['tipo_usuario']);
+?>
 
 <script src="js/home.js"></script>
    

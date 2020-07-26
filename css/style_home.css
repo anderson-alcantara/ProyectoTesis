@@ -28,6 +28,11 @@ body {
 	max-width: 250px;
 	max-height: 100px;
 }
+.header p{
+	color: #f1f1f1;
+	align-self: center;
+	margin-right: 200px;
+}
 .header h1{
 	color: #f1f1f1;
 	align-self: center;

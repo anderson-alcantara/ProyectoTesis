@@ -19,6 +19,10 @@ function openNav() {
     document.getElementById("main").style.width = "100%";
     document.getElementById("main").style.marginLeft = "0";
   }
+
+  function openFormularios(){
+    console.log("f");
+  }
   function onOpenAbout(){
     window.location.href="quienes_somos.php"
   }
@@ -28,6 +32,7 @@ function openNav() {
   function onOpenVision(){
     window.location.href="vision.php"
   }
+
 
   function onOpenform(form){
     var frame=document.getElementById('frameforms');

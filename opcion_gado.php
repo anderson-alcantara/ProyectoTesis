@@ -3,21 +3,29 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/style_home.css">
+<?php
+ session_start();
+ if(!isset($_SESSION['user'])){
+	 header("Location:index.php");
+	 exit(); 
+ }
+?>
 </head>
 <body>
 
 <div id="mySidebar" class="sidebar">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-  <a href="#">Cátedra de emprendimiento</a>
-  <a href="#">Elevator Pitch</a>
+  <a href="catedra_empren.php">Cátedra de emprendimiento</a>
+  <a href="elevator_pitch.php">Elevator Pitch</a>
   <a href="#">Feria Empresarial</a>
-  <a href="#">Opción de Grado- Creación de Empresa</a>
+  <a href="opcion_gado.php">Opción de Grado- Creación de Empresa</a>
   <a href="#">Proyecto Social</a>
   <a href="#">Consultorio</a>
   <a href="#">Asesoría</a>
   <a href="#">Extensión</a>
   <a href="#">Clúster Fami-pyme</a>
   <a href="#">Innovación</a>
+  <a href="formularios.php">registro de formularios</a>
 </div>
 
 <div id="main">

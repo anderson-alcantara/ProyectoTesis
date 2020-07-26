@@ -45,7 +45,7 @@ console.log(cadena);
 							if(r==1){
 								window.location="home3.php";
 							}else{
-								alertify.alert('Hello World!').setHeader('<em>  </em> '); ;
+								alertify.alert('Usuario o clave incorrectos').setHeader('<em>  </em> '); ;
 							}
 						}
 					});
