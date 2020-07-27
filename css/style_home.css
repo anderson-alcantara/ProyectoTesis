@@ -38,7 +38,98 @@ body {
 	align-self: center;
 	margin-right: 200px;
 }
+.navbar-user-top{
+    
+    background: #ff2e2e;
+    color: #E1E1E1;
+    height: 55px;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 7;
+}
 
+.navbar-user-top-home{
+    
+    background: #ff2e2e;
+    color: #E1E1E1;
+    height: 55px;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 7;
+}
+.navbar-user-top > ul{
+    height: 55px;
+    color: white;
+    margin: 0;
+}
+.navbar-user-top > ul > li{
+    display: inline-block;
+    float: right;
+    color: rgba(255,255,255,.4);
+    height: 55px;
+    margin: 0 12px;
+    text-align: center;
+    cursor: pointer;
+    line-height: 55px;
+}
+.navbar-user-top > ul > li:hover{
+  color: #FFD559;  
+}
+.navbar-user-top > ul > li:hover span.badge{
+    background-color: #E34724;
+}
+.navbar-user-top > ul > li > a{
+    font-size: 30px;
+    color: white;
+    text-decoration:none;
+    display:block;
+}
+.navbar-user-top > ul > li > ul{
+    display:none;
+    position:absolute;
+    min-width:140px;
+}
+
+.navbar-user-top > ul > li:hover >ul {
+    display: block;
+    background: #ff2e2e;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+}
+.navbar-user-top > ul > li:hover > ul > li > a {
+    font-size: 30px;
+    align-items: center;
+    color: white;
+    text-decoration:none;
+    display:block;
+}
+.navbar-user-top > ul > li:hover > ul > li > a:hover {
+background: gray;
+}
+.navbar-user-top > ul > li > a:hover{
+    background: #ff2e2e;
+}
+
+.navbar-user-top ul >li> ul> li {
+    position:relative;
+}
+.navbar-user-top ul>li> ul> li> ul {
+    right:-140px;
+    top:0px;
+}
+
+
+.navbar-lateral{
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
   
   .sidebar {
 	height: 100%;

@@ -20,8 +20,14 @@ function openNav() {
     document.getElementById("main").style.marginLeft = "0";
   }
 
-  function openFormularios(){
-  console.log("f");
+  function openFormularios(tipousuario){
+  if(tipousuario=="Estudiante"){
+    window.location="formularios_estudiante.php";
+  }else if(tipousuario=="Egresado"){
+    window.location="formularios_egresado.php";
+  }else{
+    window.location="formularios_docente.php";
+  }
 }
   function onOpenAbout(){
     window.location.href="quienes_somos.php"

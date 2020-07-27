@@ -24,7 +24,11 @@
 				
 				$row = $result2->fetch_array();
 				$tipo_usuario=$row['tipo_usuario'];
+				$nombres=$row['nombres'];
+				$apellidos=$row['apellidos'];
 				$_SESSION['tipo_usuario']=$tipo_usuario;
+				$_SESSION['nombres']=$nombres;
+				$_SESSION['apellidos']=$apellidos;
 
 			}
 		}

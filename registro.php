@@ -31,7 +31,8 @@
                 style="border-bottom: 100px;" autocomplete="off">
                   <option value="value1" selected>Tipo de Usuario</option>
                   <option value="value2">Estudiante</option>
-                  <option value="value3">Administrativo</option>
+				  <option value="value3">Egresado</option>
+				  <option value="value3">Docente</option>
 
                 </select>
                 <button type="button" style="margin-top: 20px;" id="registrarNuevo"  >Ingresar</button> 
@@ -43,6 +44,7 @@
 
 </body>
 </html>
+
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/alertifyjs/alertify.js"></script>
 <script type="text/javascript">

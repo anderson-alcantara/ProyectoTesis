@@ -25,8 +25,8 @@
     <script src="js/home.js"></script>
     <?php
  session_start();
- if(!isset($_SESSION['user'])){
-	 header("Location:f.php");
+ if(!isset($_SESSION['user'])  ||  $_SESSION['tipo_usuario']!=='Estudiante'){
+	 header("Location:index.php");
 	 exit(); 
  }
 ?>
@@ -296,4 +296,8 @@
 
     </div>
 </body>
+<script>
+document.getElementById("txtnombre").innerHTML = '<?php echo $_SESSION['nombres'].' '.$_SESSION['apellidos']; ?>';
+
+ </script>  
 </html>

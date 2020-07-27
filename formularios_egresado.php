@@ -25,8 +25,8 @@
     <script src="js/home.js"></script>
     <?php
  session_start();
- if(!isset($_SESSION['user'])){
-	 header("Location:f.php");
+ if(!isset($_SESSION['user'])  ||  $_SESSION['tipo_usuario']!=='Egresado'){
+	 header("Location:index.php");
 	 exit(); 
  }
 ?>
@@ -122,61 +122,6 @@
 
 
 
-                <li style="background-color: #1f1e1efd;">
-                    <a  style="pointer-events: none; cursor: default;">Opción de Grado</a>
-                </li>
-
-                <li>
-                    <a class="nav-link" href="#" ><span>Opciones De Grado CEIDEUL</span> <span class="menu-toggle"><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
-                    <ul>
-                        <li>
-                            <a href="#" onclick="onOpenform('')" style="cursor: pointer;">Formato De Inscripción  Para  Opción De Grado Creación De Empresa </a>
-                        </li>
-                        <li>
-                            <a href="#" onclick="onOpenform('')" style="cursor: pointer;">Formato De Recurso Estudiante / Externo </a>
-                        </li>
-                    </ul>
-                </li>
-
-                <li>
-                    <a class="nav-link" href="#" ><span>Opciones De Grado Creación De Empresa</span> <span class="menu-toggle"><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
-                    <ul>
-                        <li>
-                            <a href="#" onclick="onOpenform('')" style="cursor: pointer;">Formato De Asignación De Tutor Para Proyecto De Grado</a>
-                        </li>
-                        
-                        <li>
-                            <a href="#" onclick="onOpenform('')" style="cursor: pointer;">Formato De Evaluación Proyecto De Grado “creación De Empresa” </a>
-                        </li>
-                    </ul>
-                </li>
-
-
-                <li style="background-color: #1f1e1efd;">
-                    <a  style="pointer-events: none; cursor: default;">Cátedra De emprendimiento</a>
-                </li>
-
-            <li>
-                <a>Formato De Compromiso a La Catedra De Emprendimiento</a>
-            </li>    
-            <li>
-                <a class="nav-link" href="#" ><span>Elevator Pitch</span> <span class="menu-toggle"><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
-                <ul>
-                    <li>
-                        <a href="#" onclick="onOpenform('')" style="cursor: pointer;">Formato De Banco De Ideas De Negocio</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a class="nav-link" href="#" ><span>Ideas De Negocio</span> <span class="menu-toggle"><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
-                <ul>
-                    <li>
-                        <a href="#" onclick="onOpenform('')" style="cursor: pointer;">Formato Cátedra De Emprendimiento- Ideas De Negocio</a>
-                    </li>
-                </ul>
-            </li>
-
-
 
 
             <li style="background-color: #1f1e1efd;">
@@ -206,25 +151,6 @@
                         <a href="#">Formato De Satisfacción Del Expositor</a>
                     </li>
                 </ul>
-            </li>
-
-
-            <li style="background-color: #1f1e1efd;">
-                <a  style="pointer-events: none; cursor: default;">Práctica Empresarial</a>
-
-            </li>
-            <li>
-                <a href="#">Formato De Inicio De Practica Empresarial</a>
-            </li>
-            <li>
-                <a href="#">Formato De Concepto Docente Experto Disciplinar Práctica Empresarial</a>
-                
-            </li>
-            <li>
-                <a href="#">Formato De Entrega Final De Trabajo De  Práctica Empresarial</a>
-            </li>
-            <li>
-                <a href="#">Formato De Evaluación Entrega Final Practica Empresarial</a>
             </li>
 
 
@@ -296,4 +222,8 @@
 
     </div>
 </body>
+<script>
+document.getElementById("txtnombre").innerHTML = '<?php echo $_SESSION['nombres'].' '.$_SESSION['apellidos']; ?>';
+
+ </script>  
 </html>

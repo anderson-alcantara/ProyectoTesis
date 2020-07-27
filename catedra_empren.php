@@ -16,7 +16,7 @@
 <!--HOLA -->
 <div id="mySidebar" class="sidebar">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-  <a href="catedra_empren.php">Cátedra de emprendimiento</a>
+  <a href="catedra_empren.php" style="margin-top:50px;">Cátedra de emprendimiento</a>
   <a href="elevator_pitch.php">Elevator Pitch</a>
   <a href="#">Feria Empresarial</a>
   <a href="opcion_gado.php">Opción de Grado- Creación de Empresa</a>
@@ -26,14 +26,30 @@
   <a href="#">Extensión</a>
   <a href="#">Clúster Fami-pyme</a>
   <a href="#">Innovación</a>
-  <a href="formularios.php">registro de formularios</a>
+  <a onclick="openFormularios('<?php echo $_SESSION['tipo_usuario']; ?>')">registro de formularios</a>
 </div>
 
 <div id="main">
 <div class="header">
 	<img src="img/ulibrelogo2.png">
-	<h1></h1>
-	<button class="openbtn" onclick="openNav()">☰</button> 
+	
+	<nav class="navbar-user-top full-reset"  >
+            <ul>
+			<li><button class="openbtn" onclick="openNav()">☰</button></li>
+			<li><a href="" id="txtnombre" style="font-size: 15px">Nombre</a>
+					<ul>
+						<li><a href="" style="font-size: 15px" >Editar perfil</a></li>
+						
+						</li>
+					</ul>
+				</li>
+					
+			</ul>  
+
+			
+			
+
+        </nav>
 	
 </div>
    
@@ -82,6 +98,9 @@
 
 
 <script src="js/home.js"></script>
-   
+<script>
+document.getElementById("txtnombre").innerHTML = '<?php echo $_SESSION['nombres'].' '.$_SESSION['apellidos']; ?>';
+
+ </script>    
 </body>
 </html> 

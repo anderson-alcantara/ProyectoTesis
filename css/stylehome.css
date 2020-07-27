@@ -104,6 +104,17 @@ span.label-mhover{
     left: 0;
     z-index: 7;
 }
+
+.navbar-user-top-home{
+    
+    background: linear-gradient(180deg, rgba(214,0,0,1) 2%, rgba(171,33,33,1) 100%);
+    color: #E1E1E1;
+    height: 55px;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 7;
+}
 .navbar-user-top > ul{
     height: 55px;
     color: white;
