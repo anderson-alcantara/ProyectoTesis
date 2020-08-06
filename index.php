@@ -44,7 +44,10 @@ console.log(cadena);
 							console.log(r)
 							if(r==1){
 								window.location="home3.php";
-							}else{
+							}
+							
+							
+							else{
 								alertify.alert('Usuario o clave incorrectos').setHeader('<em>  </em> '); ;
 							}
 						}

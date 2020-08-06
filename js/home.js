@@ -12,7 +12,10 @@ function openNav() {
 
       }
   }
-  
+  function cerrarsesion(){
+
+    window.location="index.php"
+  }
   /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
   function closeNav() {
     document.getElementById("mySidebar").style.width = "0";
@@ -42,6 +45,7 @@ function openNav() {
 
   function onOpenform(form){
     var frame=document.getElementById('frameforms');
+    frame.style.visibility = "visible";
     switch(form){
       case "f_diagAsesoria":
         frame.src="forms/f_diagAsesoria.php";

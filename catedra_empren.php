@@ -38,7 +38,8 @@
 			<li><button class="openbtn" onclick="openNav()">☰</button></li>
 			<li><a href="" id="txtnombre" style="font-size: 15px">Nombre</a>
 					<ul>
-						<li><a href="" style="font-size: 15px" >Editar perfil</a></li>
+						<li><a href="editarperfil.php" style="font-size: 15px" >Editar perfil</a></li>
+						<li><a onclick="cerrarsesion()" style="font-size: 15px" >Cerrar Sesión</a></li>
 						
 						</li>
 					</ul>
@@ -99,8 +100,7 @@
 
 <script src="js/home.js"></script>
 <script>
-document.getElementById("txtnombre").innerHTML = '<?php echo $_SESSION['nombres'].' '.$_SESSION['apellidos']; ?>';
-
- </script>    
+document.getElementById("txtnombre").innerHTML = '<?php echo $_SESSION['nombres'].' '.$_SESSION['apellidos'].' '.'▼'; ?>';
+</script>
 </body>
 </html> 

@@ -120,8 +120,64 @@ background: gray;
     right:-140px;
     top:0px;
 }
+.input-editarperfil input{
+		width: 80%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		display: inline-block;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		box-sizing: border-box;
+	  
+}
+.input-editarperfil label{
+	width: 100%;
+	font-family: 'Montserrat', sans-serif;
+	
+	margin: 8px 0;
+	display: inline-block;
+	font-size: 20px;
+}
+.input-editarperfil button{
+	width: 10%;
+	border: 6px solid black;
+	border-color: #444;
+	height: 40px;
+	font-size: 18px;
+	background-color: #ff2e2e;
+	cursor: pointer;
+	color: white;
+	border: none;
 
+	margin: 8px 0;
+	display: inline-block;
 
+}
+.input-editarperfil button:hover{
+	background-color: hsl(0, 100%, 70%);
+
+}
+.acept-button button{
+
+	
+		font-family: "Roboto", sans-serif;
+		text-transform: uppercase;
+		outline: 0;
+		background: #f71919;
+		width: 100%;
+		border: 0;
+		padding: 15px;
+		color: #FFFFFF;
+		font-size: 14px;
+		-webkit-transition: all 0.3 ease;
+		transition: all 0.3 ease;
+		cursor: pointer;
+	  
+
+}
+.acept-button button:hover{
+	background: #f82c2c;
+}
 .navbar-lateral{
     width: 20%;
     height: 100%;

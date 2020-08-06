@@ -59,7 +59,7 @@
                     <a class="nav-link" href="#" ><span>asesoría y consultoría empresarial</span> <span class="menu-toggle"><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
                     <ul>
                         <li>
-                            <a href="#" onclick="onOpenform('f_diagAsesoria')" style="cursor: pointer;">Formato De Diagnostico Para Asesoría Empresarial  </a>
+                            <a href="#" onclick="onOpenform('f_diagAsesoria')" style="cursor: pointer;" onclick="onOpenform('f_diagAsesoria')">Formato De Diagnostico Para Asesoría Empresarial  </a>
                         </li>
                         <li>
                             <a href="#" onclick="onOpenform('f_inicioAsesoriaEmp')" style="cursor: pointer;">Formato De Inicio De Asesoría Empresarial</a>

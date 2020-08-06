@@ -7,13 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="js/alertifyjs/css/themes/default.css">
 <link rel="stylesheet" type="text/css" href="js/alertifyjs/css/alertify.css">
-<?php
- session_start();
- if(!isset($_SESSION['user'])){
-	 header("Location:index.php");
-	 exit(); 
- }
-?>
+
 </head>
 <body>
 
@@ -86,12 +80,12 @@
 						data:cadena,
 						success:function(r){
 							console.log(r)
-							if(r==2){
+							if(r==2){alertify.alert('Usuario creado con éxito').set('onok', function(closeEvent){ window.location="index.php";} ).setHeader('<em>  </em> '); 
 								alertify.alert("Este usuario ya existe, prueba con otro :)");
 							}
 							else if(r==1){
 								$('#form1')[0].reset();
-								alertify.alert('Usuario creado con éxito').set('onok', function(closeEvent){ window.location="index.php";} ).setHeader('<em>  </em> '); 
+								
 								
 							}else{
 								alertify.error("Fallo al agregar");
